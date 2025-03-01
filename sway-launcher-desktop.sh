@@ -322,7 +322,7 @@ readarray -t COMMAND_STR <<<$(
     --preview-window="${PREVIEW_WINDOW}" \
     --no-multi --cycle \
     --prompt="${GLYPH_PROMPT-# }" \
-    --header='' --no-info --margin='1,2' \
+    --header='' --no-info --margin="${SLD_MARGIN:-1,2}" \
     --color='16,gutter:-1' \
     <"$FZFPIPE"
 ) || exit 1
