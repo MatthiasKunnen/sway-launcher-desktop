@@ -62,6 +62,10 @@ If you want to be able to autostart applications , this script provides a functi
 ### Configure fzf preview window
 You can configure the fzf preview window using the environment variable `PREVIEW_WINDOW` (default: `up:2:noborder`). For example, if you prefer a taller window, you could use `PREVIEW_WINDOW=5:up`. The content of `PREVIEW_WINDOW` is passed to the `--preview-window` option, so check out the fzf manual for further details.
 
+### Changing the margin
+The margin of the window can be configured using the `SLD_MARGIN` environment variable.
+See [--margin in man fzf](https://man.archlinux.org/man/fzf.1.en#margin=) for the format.
+
 ## Extending the launcher
 
 In addition to desktop application entries and binaries, you can extend `sway-launcher-desktop` with custom item providers.
