@@ -321,6 +321,7 @@ readarray -t COMMAND_STR <<<$(
     --preview "$0 describe {2} {1}" \
     --preview-window="${PREVIEW_WINDOW}" \
     --no-multi --cycle \
+    --exact \
     --prompt="${GLYPH_PROMPT-# }" \
     --header='' --no-info --margin="${SLD_MARGIN:-1,2}" \
     --color='16,gutter:-1' \
